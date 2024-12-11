@@ -1,0 +1,28 @@
+-- Table: public.product
+
+-- DROP TABLE IF EXISTS public.product;
+
+CREATE TABLE IF NOT EXISTS public.product
+(
+    id bigint NOT NULL DEFAULT nextval('product_id_seq'::regclass),
+    name character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    description text COLLATE pg_catalog."default",
+    price numeric(10,2) NOT NULL,
+    sold boolean NOT NULL DEFAULT false,
+    buyer_id bigint,
+    seller_id bigint,
+    CONSTRAINT product_pkey PRIMARY KEY (id),
+    CONSTRAINT fk_buyer FOREIGN KEY (buyer_id)
+        REFERENCES public.user_entity (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT fk_seller FOREIGN KEY (seller_id)
+        REFERENCES public.user_entity (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.product
+    OWNER to postgres;

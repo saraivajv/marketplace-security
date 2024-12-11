@@ -1,0 +1,14 @@
+com\exemplo\marketplace\domain\enums\UserType.class
+com\exemplo\marketplace\domain\dto\ProductDTO.class
+com\exemplo\marketplace\service\UserService.class
+com\exemplo\marketplace\security\SecurityConfig.class
+com\exemplo\marketplace\controller\UserController.class
+com\exemplo\marketplace\repository\ProductRepository.class
+com\exemplo\marketplace\domain\model\Product.class
+com\exemplo\marketplace\MarketplaceApplication.class
+com\exemplo\marketplace\domain\dto\UserDTO.class
+com\exemplo\marketplace\domain\model\UserEntity.class
+com\exemplo\marketplace\service\ProductService.class
+com\exemplo\marketplace\controller\ProductController.class
+com\exemplo\marketplace\repository\UserRepository.class
+com\exemplo\marketplace\security\CustomUserDetailsService.class

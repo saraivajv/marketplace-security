@@ -1,0 +1,14 @@
+C:\Users\joaov\eclipse-workspace\marketplace\src\main\java\com\exemplo\marketplace\domain\model\UserEntity.java
+C:\Users\joaov\eclipse-workspace\marketplace\src\main\java\com\exemplo\marketplace\security\CustomUserDetailsService.java
+C:\Users\joaov\eclipse-workspace\marketplace\src\main\java\com\exemplo\marketplace\controller\ProductController.java
+C:\Users\joaov\eclipse-workspace\marketplace\src\main\java\com\exemplo\marketplace\domain\enums\UserType.java
+C:\Users\joaov\eclipse-workspace\marketplace\src\main\java\com\exemplo\marketplace\domain\model\Product.java
+C:\Users\joaov\eclipse-workspace\marketplace\src\main\java\com\exemplo\marketplace\repository\ProductRepository.java
+C:\Users\joaov\eclipse-workspace\marketplace\src\main\java\com\exemplo\marketplace\service\UserService.java
+C:\Users\joaov\eclipse-workspace\marketplace\src\main\java\com\exemplo\marketplace\domain\dto\UserDTO.java
+C:\Users\joaov\eclipse-workspace\marketplace\src\main\java\com\exemplo\marketplace\service\ProductService.java
+C:\Users\joaov\eclipse-workspace\marketplace\src\main\java\com\exemplo\marketplace\MarketplaceApplication.java
+C:\Users\joaov\eclipse-workspace\marketplace\src\main\java\com\exemplo\marketplace\controller\UserController.java
+C:\Users\joaov\eclipse-workspace\marketplace\src\main\java\com\exemplo\marketplace\domain\dto\ProductDTO.java
+C:\Users\joaov\eclipse-workspace\marketplace\src\main\java\com\exemplo\marketplace\repository\UserRepository.java
+C:\Users\joaov\eclipse-workspace\marketplace\src\main\java\com\exemplo\marketplace\security\SecurityConfig.java

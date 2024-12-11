@@ -1,0 +1,19 @@
+-- Table: public.user_entity
+
+-- DROP TABLE IF EXISTS public.user_entity;
+
+CREATE TABLE IF NOT EXISTS public.user_entity
+(
+    id bigint NOT NULL DEFAULT nextval('user_entity_id_seq'::regclass),
+    username character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    password character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    user_type character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT user_entity_pkey PRIMARY KEY (id),
+    CONSTRAINT user_entity_username_key UNIQUE (username),
+    CONSTRAINT user_type_check CHECK (user_type::text = ANY (ARRAY['SELLER'::character varying, 'BUYER'::character varying]::text[]))
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.user_entity
+    OWNER to postgres;
